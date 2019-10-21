@@ -55,6 +55,19 @@ if(isset($_POST['login'])){
 
 }
 ?>
+<?php
+$to = 'maryjane@email.com';
+$subject = 'login mail';
+$message = 'Hi you have logged in successfully?'; 
+$from = 'peterparker@gmail.com';
+ 
+// Sending email
+if(mail($to, $subject, $message)){
+    echo 'Your mail has been sent successfully.';
+} else{
+    echo 'Unable to send email. Please try again.';
+}
+?>
 <html>
 <head>
 	<title>MNNIT E-CART</title>
