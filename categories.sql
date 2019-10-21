@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `categories`
 --
-
+-- creating schema of table categories
 CREATE TABLE `categories` (
   `cat_id` int(255) NOT NULL,
   `cat_title` text NOT NULL
